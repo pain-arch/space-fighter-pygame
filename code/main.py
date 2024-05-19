@@ -27,11 +27,13 @@ while running:
             running = False
             
     # Draw the game
-    display_surface.fill('darkgray') # Fill the screen with red
-    x += 0.5 # Move the surface to the right
+    display_surface.fill('darkgray') # BG color 
     for pos in star_positions:       # Draw the stars on the screen 
       display_surface.blit(star_surf, pos )# Draw the surface
+    x += 0.5 # Move the surface to the right
     display_surface.blit(player_surf, (x, 150))
+    
+   
     
     pygame.display.update() # Update the display
     
